@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/homeProfile.css">
+<button class="addstudent"><a href="/users/students">Add student</a></button>
+
+
+<h1>List of students</h1>
+
+    <ul class="ul">
+        <% for(i of studentList){ %>
+          <li class="list">
+            <p>Name : <span><%= i.name %></span></p>
+            <p>Batch : <span><%= i.batch %></span></p>
+            <p>Colege : <span><%= i.college %></span></p>
+            <p>Status : <span><%= i.status %></span></p>
+            <p>Score : <span><%= i.score %></span></p>
+            <p>Company : <span><%= i.company %></span></p>
+            <p>Results  : <span><%= i.results %></span></p>
+            <a class="delete" href= "/users/deleteStudent/?id=<%= i._id %>" > </a>
+            
+          </li>
+
+        <%}%>
+
+

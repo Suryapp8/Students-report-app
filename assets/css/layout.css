@@ -1,0 +1,85 @@
+.main{
+    background-color: white;
+    height:100vh;
+    text-align: center;
+    font-size: larger;
+    margin: 0;
+    text-transform: capitalize;
+}
+input {
+   display: block;
+   margin: 10px auto;
+   height: 20px;
+}
+
+.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    height: 30px;
+    width: 150px;
+    border: none;
+    color: black;
+}
+.button:hover{
+   border: 1px solid black;
+   cursor: pointer;
+}
+
+.batch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+input{
+    margin-left: 20px;
+}
+p{
+    font-weight: bolder;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    color: blue;
+    font-weight: 100;
+}
+
+.addstudent{
+    height: 40px;
+    width: 120px;
+    float: right;
+    background-color: chartreuse;
+    margin-top: 20px;
+}
+
+.addstudent:hover{
+    background-color:coral;
+   
+}
+.addstudent > a{
+    text-decoration: none;
+    color:black
+}
+
+.list > a{
+    text-decoration: none;
+    color:crimson;
+    font-weight: bolder;
+}
+.list > a:after{
+    content:'Delete';
+}
+
+.list > a:hover:after{
+    content:'Sure?';
+}
